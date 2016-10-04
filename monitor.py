@@ -32,8 +32,10 @@ def log(pdisk, pnet):
     params.extend(disk_counters)
     params.extend(net_counters)
 
-    print ','.join([str(x) for x in params])
-
+    line = ','.join([str(x) for x in params])
+    with open('monitor.csv', 'a') as f:
+        f.write(line + '\n')
+    print line
     return ndisk, nnet
 
 
