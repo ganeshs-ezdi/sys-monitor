@@ -25,8 +25,9 @@ def do_logging():
 
 
 def do_sleep():
-    delay = random.uniform(minInMillis/1000.0, maxInMillis/1000.0)
-    time.sleep(delay)
+    # delay = random.uniform(minInMillis/1000.0, maxInMillis/1000.0)
+    # time.sleep(delay)
+    pass
 
 
 if __name__ == '__main__':
