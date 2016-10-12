@@ -7,7 +7,7 @@ import psutil
 
 def get_net_percent(pnet, nnet):
     received = nnet.bytes_recv - pnet.bytes_recv
-    sent = nnet.bytes_sent - nnet.bytes_sent
+    sent = nnet.bytes_sent - pnet.bytes_sent
     return [received, sent]
 
 
